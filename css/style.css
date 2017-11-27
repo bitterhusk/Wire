@@ -1,0 +1,1355 @@
+/**
+* #.# Normalize
+*
+* normalize.css v2.1.3 | MIT License | git.io/normalize
+*
+*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}input[type=submit],input[type=text]{-webkit-border-radius:0}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+/*
+* Theme Name: Wire
+* Author: Omara Kurzdorfer
+* Author URI: http://www.bitterhusk.com
+* Description: Ugly styles for an ugly theme
+* Version: 3.0
+* License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+* License URI: http://creativecommons.org/licenses/by-nc-nd/4.0/
+*/	
+
+
+	/**
+	* #.# Temporary Styles
+	*
+	*/
+	
+	
+	/*
+	article img 
+	{
+		color: white;
+	}
+	*/
+	
+	
+	/**
+	* #.# HTML
+	*
+	*/
+	
+	audio,
+	embed,
+	figcaption, 
+	figure, 
+	form, 
+	img,
+	object, 
+	table,
+	video 
+	{
+	    max-width: 100%;
+	}
+	aside, 
+	article, 
+	figcaption, 
+	figure, 
+	footer, 
+	header, 
+	nav, 
+	aside.widget 
+	{
+	    overflow: hidden;
+	    clear: both;
+	}
+	img 
+	{
+	    height: auto; 
+	    width: auto;
+	}
+	hr 
+	{
+	    display: block;
+	    clear: both;
+	    width: auto;
+	    max-width: 100%;
+	    border: none;
+	    outline: none;
+	}
+	form,
+	fieldset,
+	textarea,
+	table,
+	th,
+	td,
+	input.input-text,
+	input.input-button
+	{
+	    box-sizing: border-box;
+	}
+	fieldset,
+	input.input-text,
+	textarea,
+	audio,
+	video {
+	    border: 1px solid black;
+	}
+	form,
+	th,
+	td {
+	    border-top: 1px solid black;
+	    border-bottom: 1px solid black;
+	}
+	table caption,
+	legend,
+	.section-title,
+	.super {
+	    text-transform: uppercase;
+	    letter-spacing: .05em;
+	}
+	caption {
+	    text-align: left;
+	}
+	figure img {
+	    vertical-align: top; /* eliminates 6px gap between fig + caption */
+	}
+	figcaption {
+	}
+	    label {
+	        display: block;
+	    }
+	    textarea {
+	        width: 100%;
+	    }
+	    .input-text {
+	        width: 38%;
+	    }
+	    .input-button {
+	        float: right;
+	    }
+	    .input-button:hover,
+	    .input-button:focus {
+	        text-decoration: none;
+	    }
+	table 
+	{
+		width: 100%;
+	    border-collapse: collapse;
+	}
+	th {
+	    text-align: left;
+	}
+	select {
+	    width: 150px;
+	}
+	ul li {
+	    list-style-type: square;
+	    list-style-position: outside;
+	}
+	ol li {
+	    list-style-type: decimal-leading-zero;
+	    list-style-position: outside;
+	}
+	    
+	
+	/**
+	* #.# Template Styles
+	*
+	*/
+	
+	  
+	.aligncenter 
+	{
+	    display: block;
+	    height: auto !important;
+	    margin-right: auto;
+	    margin-left: auto;
+	    text-align: center;
+	}
+	.alignleft 
+	{
+	    height: auto !important;
+	    max-width: 50%;
+	    float: left;
+	    text-align: left;
+	}   
+	.alignright 
+	{
+	    height: auto !important;
+	    max-width: 50%;
+	    float: right;
+	    text-align: right;
+	}
+	
+	.pullquote {
+	    background-color: yellow;
+	}
+	.signature {
+	    text-align: right;
+	}
+	.input-error input.input-text,
+	.input-error textarea {
+	    border: 4px double red;
+	}
+	.no-pad {
+	    margin: 0 !important;
+	    padding: 0 !important;
+	}
+	.no-img {
+	    background: url(../images/bg-stripe-courier-reverse.gif) 0 0 repeat white;
+	}      
+	.hidden {
+	    display: none;
+	    visibility: hidden;
+	}
+	.clear {
+	    clear: both;
+	}
+	.inline {
+	    display: inline;
+	}
+	.nowrap {
+	    white-space: nowrap;
+	}
+	.script p.dialogue {
+	    text-align: center;
+	}
+	    .paran {
+	        display: inline-block;
+	    }
+	
+	/* List styles */
+	
+		ul.shuffle {
+		    text-align: center;
+		}
+		    ul.shuffle li {
+		        display: inline-block;
+		        vertical-align: top; /* IE6, E7, FF2, FF3, & Safari 3 */
+		        list-style-type: none;    
+		        text-align: left;
+		    }
+		    ul.shuffle ul {
+		        text-align: left;
+		    }
+		        ul.shuffle ul li {
+		            display: list-item;
+		            vertical-align: initial;
+		            list-style-type: decimal-leading-zero;
+		        }
+		
+		
+		ul.menu li {
+			border-bottom: 1px solid black;
+		    list-style-type: none;
+		}
+		        
+		ul.inline-list li {
+		    float: left;
+		    list-style-type: none; 
+		}
+		ul.paginate li {
+		    float: left;
+		    list-style-type: none;
+		}
+	
+		.input-inline,
+		.input-inline input.input-text,
+		.input-inline input.input-button 
+		{
+		    border: 0;
+		}
+		    .input-inline input.input-text 
+		    {
+		        float: left;
+		        width: 66.67%;
+		    }
+		    .input-inline input.input-button 
+		    {
+		        float: right;
+		        width: 33.33%;
+		    }
+	
+	nav a 
+	{
+		text-decoration: none;
+	}
+		nav a:hover {
+			text-decoration: underline;
+		}	
+		
+	a.input-button {
+	    display: inline;
+	}
+	    
+	th.th-side-left {
+	    border-right: 1px solid black;
+	}
+	a.alert-link {
+	    cursor: pointer;
+	}
+	.script 
+	{
+	    border: 1px solid black;
+	}
+	.toc { /* Table of Contents */
+		border: 1px solid black;
+		border-top: 0;
+		text-align: left !important;
+	}
+	
+    /* icons */
+    
+    .icon,
+    figure.aligncenter figcaption {
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+    h4.icon 
+    {
+	    margin-left: 16px;
+	    text-indent: 16px;
+    }
+    
+    footer#page-footer a.HTML-valid img,
+    img.HTML-valid {
+        position: relative;
+        top: 0.25em;
+    }
+    ul.icon-error li
+    {
+        list-style-type: none;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+    figure.aligncenter figcaption {
+        float: right;
+        direction: rtl;
+        background-image: url(../images/icons/icon-image.png);
+    }
+	    
+	.main-header p {
+	    text-align: center;
+	}
+	    
+	
+	/**
+	* #.# Layout
+	*
+	*/
+		
+	body {}
+	
+		header#page-header 
+		{
+		    z-index: 100;
+		    border-bottom: 2px solid black;
+		    padding-bottom: 6px; /* added for the bottom border in the header image */
+		    
+		    /*
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 76px;
+			*/
+		}
+		
+			/* logo */
+			
+			a#logo 
+			{
+				float: left;
+			}
+			
+			/* Top Navigation */
+			
+			nav#top-nav 
+			{
+				float: right;
+			}
+				nav#top-nav a#pull 
+				{
+					display: hidden;
+					width: 40px;
+					height: 40px;
+					background: url(../images/icons/icon-top-nav.png) center center no-repeat #4C8FEC;
+				}
+				
+				nav#top-nav a:hover#pull 
+				{
+					background-color: #444;
+				}
+				
+			nav#top-nav ul 
+			{
+				list-style: none;
+			}
+			    nav#top-nav li 
+			    {
+				    display: inline-block;
+					float: left;
+			    }
+	    
+		#bg /* animated background image */
+		{
+		    z-index: 1;
+		    position: fixed;
+		    top: 0; 
+		    left: 0; 
+		    min-width: 100%;
+		    min-height: 100%;
+		}
+		
+		#wrap 
+		{
+		    z-index: 10;
+		    position: relative;
+		    top: -1px; /* so #top-nav border overlaps header border */
+		    min-height: 100%;
+		    min-width: 250px; /* LC fullwidth + CC padding */
+		    margin: 0 auto;
+		    padding-left: 250px;   /* LC fullwidth */
+		    padding-right: 250px;   /* RC fullwidth + CC padding */
+		}
+		* html #wrap {
+		    height: 1%; /* So IE plays nice */
+		}
+		
+			#fluidcol {
+			    position: relative;
+			    float: left;
+			    width: 100%;
+			}
+			
+			#fixedcol-left {
+			    position: relative;
+			    top: 1px;
+			    right: 250px;  /* LC fullwidth + CC padding */
+			    float: left;
+			    width: 250px; /* LC width */
+			    margin-left: -100%;
+			    padding: 0;  /* LC padding */
+			}
+			#fixedcol-right {
+			    position: relative;
+			    top: 1px;
+			    float: left;
+			    width: 250px; /* RC width */
+			    margin-right: -100%;
+			    padding: 0; /* RC padding */
+			}
+			
+	/**
+	* #.# Colors
+	*
+    */
+    
+	    
+	    body,
+	    .input-text
+	    {
+	        color: black;
+	        background-color: white;
+	    }
+	    a
+	    {
+	        color: blue;
+	    }
+	    .title-link 
+	    {
+		    color: black;
+	    }
+	    strike,
+	    .error 
+	    {
+	        color: red;
+	    }
+	    .init 
+	    {
+		    color: lightblue;
+	    }
+			
+			
+	/**
+	* #.# Background Images
+	*
+    */
+	    
+	    
+	    caption, 
+	    hr, 
+	    td, 
+	    th,
+	    .single article 
+	    {
+	        background: url(../images/hr-gray-dot.gif) 0 0 repeat-x transparent;
+	    }	    
+		    caption, 
+		    td,   
+		    th 
+		    {
+		        background-position: 0 bottom;
+		    }
+	    
+	    #fluidcol, 
+	    .input-inline, 
+	    #main 
+	    {
+	        background: url(../images/1x1-black.gif) 0 0 repeat-y transparent;
+	    }
+	    #fluidcol {
+	        background-position: right 0;
+	    }
+	    .input-inline,
+	    section#lowbar aside.widget {
+	        background-position: 0 bottom;
+	        background-repeat: repeat-x;
+	    }
+	    footer#main-footer {
+	        background: url(../images/border-header.gif) 0 bottom repeat-x transparent;
+	    }
+	    
+	    /* icons */
+	    
+		    a.icon-comments 
+		    {
+		        background-image: url(../images/icons/icon-comments.png);
+		    }
+		    p.icon-down 
+		    {
+		        background-image: url(../images/icons/icon-arrow-down.png);
+		    }
+		    a.icon-email 
+		    {
+		        background-image: url(../images/icons/icon-email.png);
+		    }
+		    p.icon-error,
+		    a.icon-error,
+		    ul.icon-error li
+		    {
+		        background-image: url(../images/icons/icon-alert-red.png);
+		    }
+		    a.icon-more 
+		    {
+		        background-image: url(../images/icons/icon-arrow-right.png);
+		    }
+		    p.icon-notice 
+		    {
+		        background-image: url(../images/icons/icon-star.png);
+		    }
+		    a.icon-rss 
+		    {
+		        background-image: url(../images/icons/icon-rss.png);
+		    }
+		   .icon-sticky 
+		    {
+		        background-image: url(../images/icons/icon-sticky.png);
+		    }
+		    a.icon-up 
+		    {
+		        background-image: url(../images/icons/icon-arrow-up.png);
+		    }
+		    
+		    figure.aligncenter figcaption 
+		    {
+		        background-image: url(../images/icons/icon-image.png);
+		    }
+		
+	
+	/**
+	* #.# The Loop
+	*
+	*/
+	
+	
+	.sticky .the-time,
+	.sticky .the-date {
+	    display: none;
+	}
+	
+	
+	/**
+	* #.# Main Content Footer
+	*
+	*/
+	
+	
+	footer#main-footer {
+	    border-top: 4px double black;
+	}
+	
+	    /* page navigation */
+	    
+	    nav.page-nav a {
+	        text-decoration: none;
+	    }
+	
+	    /* #lowbar */
+	    
+	    section#lowbar ul.shuffle li {
+	        width: 25%;
+	        max-width: 25%;
+	    }   
+	        section#lowbar ul.shuffle ul li {
+	            width: auto;
+	            max-width: 100%;
+	        }
+	
+	
+	/**
+	* #.# Index
+	*
+	*/
+	
+	
+	.index #main article .aligncenter {
+	    max-width: 350px;
+	}
+	
+	
+	/**
+	* #.# Article Pages
+	*
+	*/
+	
+	
+	    /* Download Menu */
+	    
+	        td.td-download-link h4,
+	        td.td-download-link .input-button {
+	            display: inline;
+	        }
+	        .CC-chicklet img {
+	            float: left;
+	        }   
+	
+	    /* Comments */
+	        
+	        
+	/**
+	* #.# Resource Pages
+	*
+	*
+	*/
+	        
+	    /* Download Manager */
+	    
+	    section#download-manager img { /* featured image thumb */
+	        max-width: 59px;
+	    }
+	        
+	        
+	/**
+	* #.# Page - Site Unavailable
+	*
+	*
+	*/
+		
+	
+	/**
+	* #.# Search
+	*
+	*/
+	
+		/* DuckDuckGo */
+		
+	
+	
+	/**
+	* #.# Sidebars
+	*
+	*/
+	
+	
+	/**
+	* #.# Plugins & Widgets
+	*
+	*/
+	
+	
+		/* AdSense */
+		section#main asside.widget 
+		{
+		}
+			section#main asside.widget .adsbygoogle 
+			{
+				max-width: 100% !important;
+				
+			}
+			
+	    /* About */
+	    
+	    .widget_about img.avatar {
+	        float: left;
+	    }
+	
+	    /* Subscribe */
+	                    
+	    .widget_subscribe {
+	    }
+	
+	    /* Sticky */
+	    
+	    .widget_sticky article img.alignright,
+	    .widget_sticky article img.alignleft {
+	        max-width: 25%;
+	    }
+	
+	
+	/**
+	* #.# Footer
+	*
+	*/
+	
+	
+	footer#page-footer {
+	    z-index: 10;
+	    position: relative;
+	}
+	    footer#page-footer p {
+	        float: right;
+	        color: gray;
+	    }
+	        footer#page-footer a {
+	            color: gray;
+	            text-decoration: underline;
+	        }
+	
+	
+	/**
+	* #.# Temp
+	*
+	*/
+	    
+	    
+	    .input-inline {
+	        overflow: hidden;
+	    }
+	    .input-button {
+	        overflow: hidden;
+	    }
+   
+
+/**
+* #.# Typography
+*
+*/
+	
+	
+	/**
+	* #.# Fonts
+	*
+	* all font families, weights, styles, sizes, and associated line-heights
+	*/
+	
+	
+	body,
+	textarea,
+	input.input-text,
+	input.input-button,
+	section.sidebar aside.widget_micronicon_sticky div.subhead p {
+	    font-family: 'Roboto Slab', serif;
+	    font-weight: 400;
+	    font-size: 120%; /* standard is 16px at 100% */
+	    line-height: 1.5em; /* 24px */
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	th,
+	label,
+	legend,
+	caption,
+	.section-title,
+	input.input-button,
+	nav#top-nav {
+	    font-family: 'Oswald', sans-serif;
+	    font-weight: 400;
+	}
+	blockquote,
+	figcaption,
+	.quaint,
+	q,
+	blockquote,
+	section.sidebar aside.widget_micronicon_sticky p {
+	    font-size: 120%;
+	    font-family: 'Schoolbell', cursive;
+	    font-weight: 400; /* Standard 'normal' weight. */
+	}
+	.script 
+	{
+	    font-size: 120%;
+	    font-family: Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	    font-weight: 500;
+	}
+	h1,
+	h2,
+	h1.section-title,
+	h2.section-title,
+	h3.section-title,
+	h4.section-title,
+	h5.section-title,
+	h6.section-title 
+	{
+	    font-weight: 600;
+	}
+	caption,
+	label,
+	legend,
+	.section-title 
+	{
+	    font-weight: 400;
+	}
+	#main article dt,
+	strong
+	{
+	    font-weight: 700 !important; /* 700 is bold for 'Roboto Slab' font */
+	}
+	h1 {
+	    font-size: 2.25em; /* 36/16px */
+	    line-height: 1.33333333333333em; /* 48px */
+	}
+	h2 {
+	    font-size: 1.5em; /* 24/16px */
+	    line-height: 1em; /* 24px */
+	}
+	h3,
+	caption {
+	    font-size: 1.3125em; /* 21/16px */
+	    line-height: 1.14285714285714em; /* 24px */
+	}
+	h4,
+	legend,
+	th
+	{ /* 18/16px */
+	    font-size: 1.125em;
+	    line-height: 1.33333333333333em; /* 24/18px */
+	}
+	h5 {
+	    font-size: 1em;
+	    line-height: 1.5em;
+	}
+	h6,
+	small,
+	figcaption,
+	section.sidebar {
+	    font-size: 0.875em; /* 14px */
+	}
+	h6,
+	figcaption {
+	    line-height: 1.71428571428571em; /* 24/14px */
+	}
+	.icon-error {
+	    font-style: italic;
+	}
+	.init 
+	{
+		font-size: 3em;
+	}
+	
+	    /* section.sidebar (base 14px) */
+	    
+	    section.sidebar {
+	        line-height: 1.28571428571429em; /* 18px */
+	    }
+	
+	    
+	/**
+	* #.# Vertical Dimensions 
+	*
+	* All repeat-use vertical margins, padding, heights, & leading.
+	* h1 (36px), h2 (24px), h3 (21px), h4 (18px), h5 & h6 (16px)
+	*/
+	
+	
+	    /* #main (16/24px) */
+	        
+	        /* 48px */
+	        
+	        hr,
+	        dl {
+	            margin-top: 3em;
+	        }
+	        form,
+	        table,
+	        hr.asterism,
+	        .home .alignleft,
+	        .script 
+	        {
+	            margin-bottom: 3em;
+	        }
+	        
+	        /* 36px */
+	        
+	        .input-inline,
+	        td.td-download-link {
+	            height: 2.25em; /* older browsers, inputs don't fill space (border & button color issue) */
+	            line-height: 2.25em;
+	        }
+	        
+	        /* 24px */
+	        
+	        hr {
+	            height: 1.5em;
+	        }
+	        form, 
+	        table, 
+	        nav#single-nav p 
+	        {
+	            margin-top: 1.5em;
+	        }
+	        p,
+	        figcaption,
+	        img,
+	        ul,
+	        ol,
+	        ol li,
+	        dl,
+	        hr,
+	        fieldset,
+	        nav.page-nav
+	        {
+	            margin-bottom: 1.5em;
+	        }
+		    a#logo,
+		    nav#top-nav
+		    {
+	            margin-top: 1.5em;
+	            margin-bottom: 1.5em; 
+		    }
+	        .page h1 {
+	            margin-bottom: 0.66666666666667em; /* 24/36px */
+	        }
+	        section.sidebar h2.section-title 
+	        {
+		        margin-top: 1em;
+	        }
+	        .search h2,
+	        .archive h2 {
+	            margin-bottom: 1em; /* 24/24px */
+	        }
+	        h3,
+	        dt {
+	            margin-bottom: 1.14285714285714em; /* base 21px */
+	        }
+	        caption {
+	            padding-bottom: 1.14285714285714em; /* base 21px */
+	        }
+	        h4,
+	        legend { 
+	            margin-top: 1.33333333333333em; /* 24/18px */
+	            margin-bottom: 1.33333333333333em;
+	        }
+	        h1 /* padding instead of margin for bg */ {
+	            /*padding-bottom: 0.66666666666667em;*/
+	        }
+	        h2 /* padding instead of margin for bg */ {
+	            padding-top: 1em; /* 24/24px */
+	            padding-bottom: 1em;
+	        }
+	        footer#main-footer,
+	        footer#page-footer,
+	        .script p:first-child {
+	            padding-top: 1.5em;
+	        }
+	        dd,
+	        article,
+	        .script p {
+	            padding-bottom: 1.5em;
+	        }
+	    
+	        /* 18px */
+	        
+	        .no-img,
+	        img.title-img /* 36px image on 3 lines (72px) */ {
+	            margin-top: 1.125em;
+	        }
+	    
+	        /* 12px */
+	        
+	        section#download-manager table h4 { /* 12/18px */
+	            margin-top: 0.66666666666667em;
+	        }
+	        fieldset,
+	        td {
+	            padding-top: .75em;
+	        }
+	        fieldset p,
+	        .input-button,
+	        table h5,
+	        table p,
+	        table ul,
+	        table ol,
+	        .alignright,
+	        .alignleft
+			{
+	            margin-bottom: .75em;
+	        }
+	        th { /* 12/18px */
+	            padding-top: 0.66666666666667em !important; /* !important? */
+	            padding-bottom: 0.66666666666667em;
+	        }
+	            
+	        /* 6px */
+	        
+	        nav#top-nav form /* 6/16px */ 
+	        {
+	            margin-top: 0.375em;
+	            margin-bottom: 0.375em;
+	        }
+	        table .no-img,
+	        table img.title-img /* 6/16px */ 
+	        {
+	            margin-top: 0.375em;
+	        }
+			h5.super,
+			h6.super  /* 6/16px */
+	        {
+	            margin-bottom: 0.375em;
+	        }
+			h4.super /* 6/18px */
+	        {
+	            margin-bottom: 0.33em;
+	        }
+	        input.input-text,
+	        textarea /* 6/16px */
+	        {
+	            padding-top: 0.375em;
+	            padding-bottom: 0.375em;
+	        }
+	        
+	        /* 4px */
+	    
+	        figure.aligncenter figcaption {
+	            background-position: 0 0.28571428571429em; /* 4/14px */
+	        }
+	        
+	        /* 3px */
+	        
+	        ul.menu li 
+	        {
+	            margin-bottom: 0.1875em;
+	        } 
+	        .input-button,
+	        .input-text 
+	        {
+	            padding-top: 0.1875em;
+	            padding-bottom: 0.1875em;
+	        } 
+	        ul.menu li 
+	        {
+	            padding-bottom: 0.1875em;
+	        } 
+	        
+	        /* odd */
+	        
+	        .mejs-container /* container is 30px, so 24px margin is reduced */ {
+	            margin-bottom: 1.125em; /* 18/16px */
+	        }
+	        
+	        
+	/**
+	* #.# Horizontal Margins, Padding, & Widths
+	*
+	* All repeat-use horizontal margins & padding.
+	* h1 (36px), h2 (24px), h3 (21px), h4 (18px), h5 & h6 (16px)
+	*/
+	    
+	
+	    /* #main (16/24px) */
+	    
+	        /* centered */
+	        
+	        #main article,
+	        #main article h3,
+	        #main asside.widget, 
+	        #main dl,
+	        #main form,
+	        #main h4,
+	        #main h5,
+	        #main h6,
+	        #main ol,
+	        #main p,
+	        #main table,
+	        #main ul,
+	        .script 
+	        {
+	            margin-right: auto;
+	            margin-left: auto;
+	        }
+	        
+	        ul,
+	        ol 
+	        {
+		        padding-left: 3em;
+	        }
+	        
+	        /* 24px */
+	        
+	        hr,
+	        fieldset,
+	        .mejs-container,
+	        a#logo,
+	        nav#top-nav 
+	        {
+	            margin-right: 1.5em;
+	            margin-left: 1.5em;
+	        }
+	        .alignleft {
+	            margin-right: 1.5em;
+	        }
+	        .alignright {
+	            margin-left: 1.5em;
+	        }
+	        p,
+	        table.content
+	        {
+	            padding-right: 1.5em;
+	            padding-left: 1.5em;
+	        }
+	        ul,
+	        ol 
+	        {
+		        padding-right: 1.5em;
+	        }
+	        ul.menu
+	        {
+		        padding-left: 1.5em;
+	        }
+	        p.icon,
+	        ul.icon li 
+	        {
+	            background-position: 1.5em center;
+	        }
+	        
+	        /* 22px */
+	        
+	        figure.aligncenter figcaption { /* 16px icon + 12px pad */
+	            padding-left: 1.57142857142857em; /* 22/14px */
+	        }
+	        a.icon,
+	        ul.icon li 
+	        { /* 16px icon + 12px pad */
+	            padding-left: 1.375em; /* 22/16px */
+	        }
+	        p.icon,
+	        ul.icon li 
+	        {
+	            text-indent: 1.57142857142857em;
+	        }
+	        
+	        /* 12px */
+	        
+	        .subhead p.icon {
+	            background-position: .75em center;
+	        }
+	        section#lowbar aside.widget {
+	            margin-right: .75em;
+	            margin-left: .75em;
+	        }
+	        table .alignleft,
+	        table .input-button
+	        {
+	            margin-right: .75em;
+	        }
+	        table .alignright,
+	        .CC-chicklet img {
+	            margin-left: .75em;
+	        }
+	        h5,
+	        h6,
+	        th,
+	        table.data td,
+	        table p,
+	        .input-button,
+	        nav.page-nav,
+	        .subhead p,
+	        #main h5.super, 
+	        #main h6.super    {
+	            padding-right: .75em;
+	            padding-left: .75em;
+	        }
+	        table ul,
+	        table ol  {
+	            padding-right: .75em;
+	        }
+	        nav#top-nav ul li
+	        {
+		        padding-left: .75em;
+	        }
+	        h1 
+	        { /* 12/36px */
+	            padding-right: 0.33333333333333em;
+	            padding-left: 0.33333333333333em;
+	        }   
+	        h2 { /* 12/24px */
+	            padding-right: .5em;
+	            padding-left: .5em;
+	        }
+	        h3, 
+	        dt, 
+	        caption
+	        { /* 12/21px */
+	            padding-right: 0.57142857142857em;
+	            padding-left: 0.57142857142857em;
+	        }
+	        h4, 
+	        #main h4.super 
+	        { /* 12/18px */
+	            padding-right: 0.66666666666667em;
+	            padding-left: 0.66666666666667em;
+	        }
+	        figcaption { /* 12/14px */
+	            padding-right: 0.85714285714286em; 
+	            padding-left: 0.85714285714286em; 
+	        }
+	        
+	        /* 6px */
+	        
+	        fieldset p.icon {
+	            background-position: 0.375em center;
+	        }
+	        nav#top-nav form,
+	        .g-recaptcha {
+	            margin-right: 0.375em;
+	            margin-left: 0.375em;
+	        }
+	        nav.page-nav ul.paginate li {
+	            margin-right: 0.375em;
+	        }
+	        fieldset p,
+	        input.input-text,
+	        textarea,
+	        span.search-highlight /* search term highlight */,
+	        nav.page-nav ul.paginate li a,
+	        .meta_tags {
+	            padding-right: 0.375em;
+	            padding-left: 0.375em;
+	        }
+	        
+	        /* 3px */
+	        nav.page-nav li.current 
+	        {
+	            padding-right: 0.1875em;
+	            padding-left: 0.1875em;
+	        }
+	        
+	        /* odd dimensions */
+	        
+	        body.category section#main article,
+	        body.index section#main article,
+	        body.resource section#main article,
+	        body.tag-archive section#main article,
+	        #main article h3,
+	        #main asside.widget,
+	        #main dl,
+	        #main figure,
+	        #main form,
+	        #main h5,
+	        #main h6,
+	        #main ol,
+	        #main p,
+	        #main table,
+	        #main ul
+	        .script 
+	        {
+	            max-width: 50em; /* 800/16px */
+	        }
+	        #main dt,
+	        #main h3 
+	        {
+	            max-width: 38.0952380952381em; /* 800/21px */
+	        }
+	        #main h4,
+	        #main th 
+	        {
+	            max-width: 44.44444444444444em; /* 800/18px */
+	        }
+	        footer#main-footer,
+	        header.main-header
+	        { /* width of side borders */
+	            margin-right: 1px;
+	            margin-left: 1px;
+	        }
+	        
+	           
+	/**
+	* #.# Padding and Margin Reset
+	*
+	*/
+	
+	
+	ul.shuffle,
+	nav#top-nav form {
+	    max-width: 100% !important;
+	}
+	h1,
+	h2,
+	section.sidebar hr,
+	.input-inline .input-button,
+	.input-inline .input-text {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	}
+	.subhead p,
+	#main h4.super,
+	#main h5.super, 
+	#main h6.super
+	{
+	    margin-right: 0 !important;
+	    margin-left: 0 !important;
+	}
+	p,
+	ul,
+	table h5,
+	section.sidebar form,
+	section.sidebar dl {
+	    margin-top: 0;
+	}
+	figcaption img,
+	img.icon,
+	img.icon-post-format,
+	section.sidebar h2,
+	.script p
+	{
+	    margin-bottom: 0;
+	}
+	section.sidebar img.icon-post-format {
+	    margin-bottom: 0 !important;
+	}
+	.widget_micronicon_about {
+	    padding: 0;
+	}
+	fieldset {
+	    padding-right: 0;
+	    padding-bottom: 0;
+	    padding-left: 0;
+	}
+	section.sidebar h2,
+	section.sidebar td {
+	    padding-top: 0;
+	}
+	td,
+	ul.shuffle,
+	.input-inline .input-button,
+	.widget_micronicon_sticky_widget .subhead p /* Micronicon Sticky Widget */,
+	.widget_micronicon_sticky_widget article h4 /* Micronicon Sticky Widget */
+	{
+	    padding-right: 0 !important;
+	    padding-left: 0 !important;
+	}
+	ul.inline-list
+	{
+	    padding-left: 0;
+	}
+	
+	/* Percents */
+	
+	section.sidebar 
+	{
+		font-size: 80%;
+	}

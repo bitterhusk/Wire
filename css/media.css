@@ -1,0 +1,251 @@
+/*
+* #.# Media Queries
+*/
+    
+    
+    @media (max-width: 9999px) {
+
+        body {
+            min-width: auto;
+        }
+        section#lowbar ul.shuffle li  {
+            width: 25%;
+            max-width: 25%;
+        }
+    }
+        
+    /* large desktop */
+    @media (max-width: 1900px) {
+	    
+        section#lowbar ul.shuffle li  {
+            width: 50%;
+            max-width: 50%;
+        }
+        
+    }
+    
+    /* large desktop */
+    @media (max-width: 1280px) {
+    
+        #wrap {
+            padding-right: 0;
+        }
+        #fixedcol-right {
+            position: static;
+            float: none;
+            width: auto;
+            margin-right: 0;
+        }
+        
+    }
+    
+    @media (max-width: 1024px) { /* styles cascade to iPad settings below! */
+    
+        section#lowbar ul.shuffle li  {
+            width: 50%;
+            max-width: 50%;
+        }
+    
+    }
+    
+    @media (max-width: 960px) {
+    }
+        
+    }
+    
+    /* landscape phone to portrait tablet */
+    @media (max-width: 900px) {
+    }
+
+    @media (max-width: 800px) 
+    {
+	    
+        #wrap,
+        #fixedcol-right,
+        #fixedcol-left,
+        #fluidcol 
+        {
+            /*position: static; was causing issue with index background (#bg) image*/
+            float: none;
+            min-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #fixedcol-left {
+            position: static;
+            margin-left: 0;
+        }
+        img.avatar 
+        {
+	        max-width: 150px;
+	    }
+    }
+    
+    @media (max-width: 700px) {
+    }
+    
+    @media (min-width: 641px) {
+    }
+        
+    @media (max-width: 640px) {
+        
+        section#lowbar ul.shuffle li  {
+            width: 100%;
+            max-width: 100%;
+        }
+        .toc 
+        {
+            max-width: 100%;
+            width: 100%;
+            border: 0;
+            background-color: transparent !important;
+        }
+        
+        /* Top Navigation */
+        
+        header#page-header 
+        {
+			/*position: absolute;*/
+		}
+
+			nav#top-nav a#pull 
+			{
+				display: inline-block;
+			}
+		
+			nav#top-nav ul, 
+			nav#top-nav:active ul 
+			{ 
+				display: none;
+				/*overflow: hidden;*/
+				position: absolute;
+				/*padding-top: 1.5em;
+				padding-bottom: 1.5em;*/
+				margin: 0 !important;
+				padding: 0 !important;
+				right: 1.5em;
+				top: 1.5em;
+				width: 250px;
+			}
+		
+			nav#top-nav:hover ul 
+			{
+				z-index: 100;
+				display: block;
+			}
+		
+				nav#top-nav li {
+					text-align: center;
+					width: 100%;
+					margin-bottom: 0.1875em; /* same as ul.menu */
+					padding-bottom: 0.1875em;
+					padding: 0.34722222em 0 !important;
+				}
+        
+        /* Hide */
+        
+        .widget_categories, 
+        .widget_post-count, 
+        .widget_sticky 
+        {
+	        display: none;
+	    }
+			
+    }
+    
+    @media only screen and (max-width : 480px) 
+    {
+	    
+    }
+    
+    /* iPhone 2 */
+    @media screen and (max-width: 360px) {
+    }
+    
+    /* (iPad) (affects Safari 3 - 5) */
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+        
+    }
+    
+    /* (iPad Mini) */
+    @media screen and (device-width: 768px) 
+    and (device-height: 1024px) 
+    and (-webkit-device-pixel-ratio: 1) {
+        
+    }
+    
+    /* (iPad, portrait) */
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) {
+        
+        section.sidebar {
+            font-size: 100%;
+        }
+        
+    }
+
+    /* (iPad, landscape) */
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape) {
+        
+        section.sidebar {
+            font-size: 100%;
+        }
+        
+    }
+    
+    @media print {
+        
+        body,
+        #main,
+        textarea,
+        input.input-text,
+        input.input-button,
+        section.sidebar aside.widget_micronicon_sticky div.subhead p {
+            font: 12pt Georgia, "Times New Roman", Times, serif;
+            line-height: 1.3;
+            background: none;
+        }
+        a {
+            color: #000;
+        }
+        h1 {
+            font-size: 24pt;
+        }
+        
+        h2 {
+            font-size: 14pt;
+            margin-top: 25px;
+        }
+        article img,
+        nav, 
+        #fixedcol-right,
+        #fixedcol-left,
+        .widget, 
+        .meta_comments,
+        .midcontent,
+        section#comments,
+        section#respond,
+        footer#main-footer,
+        footer#page-footer {
+            overflow: hidden;
+            height: 0;
+            width: 0;
+            display: none !important;
+        }
+        #wrap {
+            position: static;
+            top: 0;            
+            margin: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+
+    }
